@@ -8,7 +8,7 @@ outputs:
   num_squared:
     value: ${{steps.get-square.outputs.num_squared}}
 runs:
-  using: 'compsite'
+  using: 'docker'
   steps:
     - name: Install Python
       uses: actions/setup-python@v4
