@@ -7,9 +7,7 @@ jobs:
     name: Returns the num square
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          actions/checkout Default: ${{ github.repository }}
+        uses: actions/checkout@v3
       - name: Fetch num squared
         id: get_square
         uses: ./action.yaml
